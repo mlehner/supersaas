@@ -12,6 +12,7 @@ export default class extends Controller {
                 right: ''
             },
             initialView: 'listWeek',
+            contentHeight: 'auto',
             events: '/appointments',
             eventClick: arg => {
                 const event = new CustomEvent("booking-slot-selected", {
