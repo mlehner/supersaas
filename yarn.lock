@@ -1396,33 +1396,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/common@npm:~5.10.1":
-  version: 5.10.1
-  resolution: "@fullcalendar/common@npm:5.10.1"
+"@fullcalendar/core@npm:^6.1.8":
+  version: 6.1.8
+  resolution: "@fullcalendar/core@npm:6.1.8"
   dependencies:
-    tslib: ^2.1.0
-  checksum: ac5ad04c9ade350ad51a87146ba6c5e679e74c237229ced8057e3a4cc6af9ab93894375c8004beff6f45594bca73ed13763b91604c2b9851b78810dcd991729e
+    preact: ~10.12.1
+  checksum: 66c13078c95573c4dc1c767c2a855c8f77608d1c0cee07eac4923fa1d967a64557640079b45e3da43a68cb8942873dd06523716544f25d98efa3641c0754045f
   languageName: node
   linkType: hard
 
-"@fullcalendar/core@npm:^5.10.1":
-  version: 5.10.1
-  resolution: "@fullcalendar/core@npm:5.10.1"
-  dependencies:
-    "@fullcalendar/common": ~5.10.1
-    preact: ^10.0.5
-    tslib: ^2.1.0
-  checksum: ee7decffe89b28fae3fe690fa3d738bdfc7d927c108d0725a186a43b2b264105f3bbb272601e20e4679e8f12805753f5b33d806b7f5c7b0758a687d2aa6735b1
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/list@npm:^5.10.1":
-  version: 5.10.1
-  resolution: "@fullcalendar/list@npm:5.10.1"
-  dependencies:
-    "@fullcalendar/common": ~5.10.1
-    tslib: ^2.1.0
-  checksum: 442bd8c098d77c80312d543aae321d45ca071c170d7addf80ab5740aaf4b833504ee812c78c0e9ef8c3debbbe5e45201ef61e20555dba23bb817068dbdb19850
+"@fullcalendar/list@npm:^6.1.8":
+  version: 6.1.8
+  resolution: "@fullcalendar/list@npm:6.1.8"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.8
+  checksum: b5c397040e0ed9566f0bdbe2c6377a3656f2db823b38085bf45bfb50c6415ecc854411e496b81d5932a5c77a1a9abfa8b582d67bad1e4dc562f41b6b14621dae
   languageName: node
   linkType: hard
 
@@ -5642,10 +5630,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:^10.0.5":
-  version: 10.5.15
-  resolution: "preact@npm:10.5.15"
-  checksum: 1c9f025ed6ff9c6cbe85da4feb88011795914d615244089396d1157376897a09f478eac0d582c66bc5a96c2841ebd9f8dfbe0a28e8c1820bdd7c314083350d40
+"preact@npm:~10.12.1":
+  version: 10.12.1
+  resolution: "preact@npm:10.12.1"
+  checksum: 0de99f477563ab7f94a0f964952ad216375973c0dcd9eb49881f8eb5effc5ed6948da062548c87d5bb0d82f1a1e516b649020e760eab3a0503dfdd8e64d34a26
   languageName: node
   linkType: hard
 
@@ -6022,8 +6010,8 @@ __metadata:
   dependencies:
     "@babel/core": ^7.17.0
     "@babel/preset-env": ^7.16.0
-    "@fullcalendar/core": ^5.10.1
-    "@fullcalendar/list": ^5.10.1
+    "@fullcalendar/core": ^6.1.8
+    "@fullcalendar/list": ^6.1.8
     "@hotwired/stimulus": ^3.0.0
     "@symfony/stimulus-bridge": ^3.2.0
     "@symfony/webpack-encore": ^4.0.0
@@ -6638,13 +6626,6 @@ __metadata:
   version: 1.0.1
   resolution: "toidentifier@npm:1.0.1"
   checksum: 952c29e2a85d7123239b5cfdd889a0dde47ab0497f0913d70588f19c53f7e0b5327c95f4651e413c74b785147f9637b17410ac8c846d5d4a20a5a33eb6dc3a45
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^2.1.0":
-  version: 2.3.1
-  resolution: "tslib@npm:2.3.1"
-  checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
   languageName: node
   linkType: hard
 

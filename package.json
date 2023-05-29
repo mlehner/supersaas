@@ -20,7 +20,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "@fullcalendar/core": "^5.10.1",
-        "@fullcalendar/list": "^5.10.1"
+        "@fullcalendar/core": "^6.1.8",
+        "@fullcalendar/list": "^6.1.8"
     }
 }
