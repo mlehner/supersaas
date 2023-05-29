@@ -52,7 +52,7 @@ final class CalendarController extends AbstractController
         $result = $validator->validate($jsonResponse, 'http://supersaas.com/api/range.json');
 
         if (!$result->isValid()) {
-            return Response::create((new ErrorFormatter())->formatErrorMessage($result->error()), 500);
+            return Response::create(json_encode((new ErrorFormatter())->format($result->error()), JSON_THROW_ON_ERROR), 500);
         }
 
         $filesystem = new Filesystem();
