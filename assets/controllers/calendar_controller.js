@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 import { Calendar } from '@fullcalendar/core';
 import listPlugin from '@fullcalendar/list';
 

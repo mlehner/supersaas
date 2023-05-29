@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 import { formatRange } from '@fullcalendar/core';
 
 export default class extends Controller {
