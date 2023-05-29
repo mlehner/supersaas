@@ -2,74 +2,64 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "http://supersaas.com/api/range.json",
   "type": "object",
-    "properties": {
-      "slots": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "required": ["id", "title", "capacity", "start", "finish", "bookings"],
-          "properties": {
-            "id": {
-              "type": "number"
-            },
-            "title": {
-              "type": "string"
-            },
-            "description": {
-              "type": "string"
-            },
-            "location": {
-              "type": "string"
-            },
-            "capacity": {
-              "type": "number"
-            },
-            "slot_id": {
-              "type": "string"
-            },
-            "start": {
-              "type": "string"
-            },
-            "finish": {
-              "type": ["null", "string"]
-            },
-            "created_on": {
-              "type": "string"
-            },
-            "updated_on": {
-              "type": "string"
-            },
-            "created_by": {
-              "type": "string"
-            },
-            "updated_by": {
-              "type": "string"
-            },
-            "user_id": {
-              "type": "number"
-            },
-            "waitlisted": {
-              "type": "boolean"
-            },
-            "bookings": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "full_name": {
-                    "type": "string"
-                  }
+  "required": [
+    "slots"
+  ],
+  "properties": {
+    "slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "capacity",
+          "start",
+          "finish",
+          "bookings"
+        ],
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "capacity": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "start": {
+            "type": "string"
+          },
+          "finish": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "bookings": {
+            "type": "array",
+            "required": [
+              "id",
+              "full_name"
+            ],
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
                 },
-                "required": ["id", "full_name"]
+                "full_name": {
+                  "type": "string"
+                }
               }
             }
           }
         }
       }
-    },
-    "required": ["slots"],
-    "additionalProperties": false
+    }
+  }
 }
