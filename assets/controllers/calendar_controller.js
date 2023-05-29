@@ -24,7 +24,7 @@ export default class extends Controller {
             eventDataTransform: json => {
                 return {
                     ...json,
-                    title: `${json.bookings.length} / ${json.capacity} ${json.title}`,
+                    title: `${json.bookings.length} / ${json.capacity ?? '∞'} ${json.title}`,
                 };
             }
         });
